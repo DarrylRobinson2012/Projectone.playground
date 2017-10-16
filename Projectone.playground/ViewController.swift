@@ -7,9 +7,13 @@
 //
 
 import UIKit
-
+import Foundation
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var theLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,7 +27,18 @@ class ViewController: UIViewController {
     }
 
 
-}
+    @IBAction func clickingTheButton(_ sender: Any) {
+   
+    theLabel.text = "Clicked button "
+        
+    
+    
+    
+    
+    
+    
+    
+
 
 // Darryl Robinson
 // Project 1: Soccer Coordinator
@@ -221,6 +236,6 @@ addEmails(for: raptors, ofTeam: "Raptors")
 
 for letter in letters { print(letter) }
 
+}
 
-
-
+}
